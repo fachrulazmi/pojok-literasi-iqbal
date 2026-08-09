@@ -8,7 +8,7 @@ import Penutup from './pages/Penutup'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pojok-literasi-digital">
       <div className="font-sans">
         <Navbar />
         <main>

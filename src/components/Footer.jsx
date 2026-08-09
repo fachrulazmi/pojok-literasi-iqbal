@@ -105,7 +105,7 @@ export default function Footer() {
         <div className="border-t border-surface/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img
-              src="/logo-all.png"
+              src="./images/logo-all.png"
               alt="Pojok Literasi Digital"
               className="h-8 w-auto"
             />
