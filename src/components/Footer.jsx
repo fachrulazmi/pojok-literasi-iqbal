@@ -1,37 +1,31 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import {
-  faFacebookF,
   faInstagram,
-  faYoutube,
-  faTwitter,
+  faTiktok,
 } from '@fortawesome/free-brands-svg-icons'
-import useSmoothScroll from '../hooks/useSmoothScroll'
+import { useNavigate } from 'react-router-dom'
 
 const footerLinks = [
   {
     title: 'Navigasi',
     links: [
-      { to: 'beranda', label: 'Beranda' },
-      { to: 'tentang', label: 'Tentang' },
-      { to: 'program', label: 'Program' },
-      { to: 'galeri', label: 'Galeri' },
-      { to: 'kontak', label: 'Kontak' },
+      { to: '/', label: 'Beranda' },
+      { to: '/konten-literasi', label: 'Konten Literasi' },
+      { to: '/penutup', label: 'Penutup' },
     ],
   },
   {
-    title: 'Program',
+    title: 'Konten',
     links: [
-      { to: 'program', label: 'Komputer Dasar' },
-      { to: 'program', label: 'Internet Sehat' },
-      { to: 'program', label: 'Media Sosial Bijak' },
-      { to: 'program', label: 'Coding Pemula' },
+      { to: '/konten-literasi', label: 'Sosial' },
+      { to: '/konten-literasi', label: 'Kebudayaan' },
+      { to: '/konten-literasi', label: 'Keagamaan' },
     ],
   },
 ]
 
 export default function Footer() {
-  const scrollTo = useSmoothScroll(64)
+  const navigate = useNavigate()
 
   return (
     <footer className="bg-primary text-surface/80">
@@ -46,7 +40,7 @@ export default function Footer() {
               {footerLinks[0].links.map((link) => (
                 <li key={link.to}>
                   <button
-                    onClick={() => scrollTo(link.to)}
+                    onClick={() => navigate(link.to)}
                     className="text-surface/50 hover:text-accent transition-colors cursor-pointer text-sm bg-transparent border-none px-0 py-1.5 min-h-[44px] flex items-center"
                   >
                     {link.label}
@@ -56,16 +50,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 2: Program */}
+          {/* Kolom 2: Konten */}
           <div>
             <h4 className="font-semibold text-surface text-sm mb-4">
-              Program
+              Konten
             </h4>
             <ul className="space-y-2">
               {footerLinks[1].links.map((link, i) => (
                 <li key={i}>
                   <button
-                    onClick={() => scrollTo(link.to)}
+                    onClick={() => navigate(link.to)}
                     className="text-surface/50 hover:text-accent transition-colors cursor-pointer text-sm bg-transparent border-none px-0 py-1.5 min-h-[44px] flex items-center"
                   >
                     {link.label}
@@ -82,47 +76,38 @@ export default function Footer() {
             </h4>
             <div className="flex items-center gap-4 mb-4">
               <a
-                href="#"
+                href="https://www.tiktok.com/@ceritabulusari"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-11 h-11 bg-surface/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors"
-                aria-label="Facebook"
+                aria-label="TikTok"
               >
-                <FontAwesomeIcon icon={faFacebookF} className="text-sm" />
+                <FontAwesomeIcon icon={faTiktok} className="text-sm" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/cerita.bulusari"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-11 h-11 bg-surface/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors"
                 aria-label="Instagram"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-sm" />
               </a>
-              <a
-                href="#"
-                className="w-11 h-11 bg-surface/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors"
-                aria-label="YouTube"
-              >
-                <FontAwesomeIcon icon={faYoutube} className="text-sm" />
-              </a>
-              <a
-                href="#"
-                className="w-11 h-11 bg-surface/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors"
-                aria-label="Twitter"
-              >
-                <FontAwesomeIcon icon={faTwitter} className="text-sm" />
-              </a>
             </div>
             <p className="text-surface/50 text-xs leading-relaxed">
-              Dapatkan informasi terbaru seputar program dan kegiatan Pojok
-              Literasi Digital melalui media sosial kami.
+              Ikuti kami di TikTok dan Instagram untuk informasi terbaru
+              seputar program dan kegiatan Pojok Literasi Digital.
             </p>
           </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-surface/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <FontAwesomeIcon
-              icon={faBookOpen}
-              className="text-accent text-sm"
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo-all.png"
+              alt="Pojok Literasi Digital"
+              className="h-8 w-auto"
             />
             <span className="text-surface/50 text-sm">
               Pojok Literasi Digital

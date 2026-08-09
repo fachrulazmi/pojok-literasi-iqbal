@@ -1,24 +1,27 @@
 import { useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes, faBookOpen } from '@fortawesome/free-solid-svg-icons'
-import useSmoothScroll from '../hooks/useSmoothScroll'
 
 const navLinks = [
-  { to: 'beranda', label: 'Beranda' },
-  { to: 'tentang', label: 'Tentang' },
-  { to: 'program', label: 'Program' },
-  { to: 'galeri', label: 'Galeri' },
-  { to: 'testimoni', label: 'Testimoni' },
-  { to: 'kontak', label: 'Kontak' },
+  { to: '/', label: 'Beranda' },
+  { to: '/konten-literasi', label: 'Konten Literasi' },
+  { to: '/penutup', label: 'Penutup' },
 ]
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const scrollTo = useSmoothScroll(64)
+  const navigate = useNavigate()
+  const location = useLocation()
 
-  const handleNavClick = (id) => {
-    scrollTo(id)
+  const handleNavClick = (path) => {
+    navigate(path)
     setIsOpen(false)
+  }
+
+  const isActive = (path) => {
+    if (path === '/') return location.pathname === '/'
+    return location.pathname.startsWith(path)
   }
 
   return (
@@ -27,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => scrollTo('beranda')}
+            onClick={() => handleNavClick('/')}
             className="flex items-center gap-2 cursor-pointer bg-transparent border-none p-0"
           >
             <FontAwesomeIcon
@@ -44,8 +47,12 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <button
                 key={link.to}
-                onClick={() => scrollTo(link.to)}
-                className="text-muted hover:text-accent transition-colors cursor-pointer text-sm font-medium bg-transparent border-none p-0"
+                onClick={() => handleNavClick(link.to)}
+                className={`transition-colors cursor-pointer text-sm font-medium bg-transparent border-none p-0 ${
+                  isActive(link.to)
+                    ? 'text-accent'
+                    : 'text-muted hover:text-accent'
+                }`}
               >
                 {link.label}
               </button>
@@ -72,7 +79,11 @@ export default function Navbar() {
               <button
                 key={link.to}
                 onClick={() => handleNavClick(link.to)}
-                className="block w-full text-left py-3.5 text-muted hover:text-accent transition-colors cursor-pointer text-sm font-medium bg-transparent border-none min-h-[44px]"
+                className={`block w-full text-left py-3.5 transition-colors cursor-pointer text-sm font-medium bg-transparent border-none min-h-[44px] ${
+                  isActive(link.to)
+                    ? 'text-accent'
+                    : 'text-muted hover:text-accent'
+                }`}
               >
                 {link.label}
               </button>
