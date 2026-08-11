@@ -17,7 +17,7 @@ function ContactSection() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-3">
               KONTAK KAMI
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight mb-6">
+            <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight mb-6">
               Hubungi <span className="text-accent">Kami</span>
             </h2>
             <p className="text-muted text-sm leading-relaxed mb-8">

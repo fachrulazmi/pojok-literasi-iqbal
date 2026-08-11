@@ -46,7 +46,7 @@ export default function Gallery() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             GALERI KEGIATAN
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
             Dokumentasi <span className="text-accent">Aktivitas</span> Kami
           </h2>
         </div>

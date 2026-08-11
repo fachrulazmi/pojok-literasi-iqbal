@@ -28,7 +28,7 @@ export default function Hero() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-3">
               POJOK LITERASI DIGITAL
             </p>
-            <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
+            <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight mb-6">
               Membangun Masyarakat{' '}
               <span className="text-accent">Melek Digital</span> di Era
               Informasi

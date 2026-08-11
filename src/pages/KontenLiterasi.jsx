@@ -13,7 +13,7 @@ export default function KontenLiterasi() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-3">
               KONTEN LITERASI
             </p>
-            <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
+            <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight mb-6">
               Wawasan Literasi{' '}
               <span className="text-accent">Digital</span>
             </h1>

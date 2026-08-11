@@ -42,7 +42,7 @@ export default function Programs() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             PROGRAM KAMI
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
             Layanan & Pelatihan{' '}
             <span className="text-accent">Literasi Digital</span>
           </h2>

@@ -33,7 +33,7 @@ function IntroSection() {
 
           {/* Teks — kiri di desktop, bawah di mobile */}
           <div className="order-2 md:order-1">
-            <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
+            <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight mb-6">
               Apa itu{' '}
               <span className="text-accent">Pojok Literasi Digital</span>?
             </h1>
@@ -94,7 +94,7 @@ function TujuanSection() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-3">
               TUJUAN &amp; HARAPAN
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+            <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
               Alasan Kami <span className="text-accent">Hadir</span> untuk
               Masyarakat
             </h2>
@@ -145,7 +145,7 @@ function SinopsisSection() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             SINOPSIS KONTEN
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
             Sekilas <span className="text-accent">Garis Besar</span> Literasi
             Digital
           </h2>

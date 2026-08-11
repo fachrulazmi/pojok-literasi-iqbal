@@ -70,7 +70,7 @@ function HeaderSection() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             TESTIMONI
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
+          <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight mb-6">
             Suara <span className="text-accent">Warga</span> Bulusari
           </h1>
           <p className="text-primary/70 text-base md:text-lg leading-relaxed">
@@ -92,7 +92,7 @@ function CeritaSection() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             CERITA MEREKA
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
             Kesan yang <span className="text-accent">Berkesan</span>
           </h2>
         </div>
@@ -179,7 +179,7 @@ function GridSection() {
           <p className="text-accent text-sm font-semibold tracking-wide mb-3">
             ULASAN
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight">
             Kata Mereka Selengkapnya
           </h2>
         </div>
@@ -241,7 +241,7 @@ function StatSection() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-3">
               DAMPAK
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold text-primary leading-tight mb-6">
+            <h2 className="text-xl md:text-4xl font-bold text-primary leading-tight mb-6">
               Dampak Nyata bagi{' '}
               <span className="text-accent">Masyarakat</span>
             </h2>
@@ -265,7 +265,7 @@ function StatSection() {
                     icon={s.icon}
                     className="text-accent text-lg mb-3"
                   />
-                  <p className="text-2xl font-bold text-primary">{s.value}</p>
+                  <p className="text-xl md:text-2xl font-bold text-primary">{s.value}</p>
                   <p className="text-muted text-xs mt-1">{s.label}</p>
                 </div>
               ))}

@@ -50,7 +50,7 @@ export default function DetailLiterasi() {
               <p className="text-accent text-sm font-semibold tracking-wide mb-1">
                 KONTEN LITERASI
               </p>
-              <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight">
+              <h1 className="text-xl md:text-5xl font-bold text-primary leading-tight">
                 {article.title}
               </h1>
             </div>
@@ -66,7 +66,7 @@ export default function DetailLiterasi() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex flex-col md:grid md:grid-cols-5 gap-8 md:gap-12">
             <div className="md:col-span-3">
-              <p className="text-primary/70 text-lg leading-relaxed">
+              <p className="text-primary/70 text-base md:text-lg leading-relaxed">
                 {article.desc}
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function DetailLiterasi() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-2">
               DOKUMENTASI
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary">
+            <h2 className="text-xl md:text-3xl font-bold text-primary">
               Galeri <span className="text-accent">Foto</span>
             </h2>
           </div>
@@ -157,7 +157,7 @@ export default function DetailLiterasi() {
                       isOdd ? 'md:order-1 md:col-span-4' : 'md:order-2 md:col-span-4'
                     }`}
                   >
-                    <h2 className="text-xl md:text-2xl font-bold text-primary mb-3">
+                    <h2 className="text-lg md:text-2xl font-bold text-primary mb-3">
                       {section.heading}
                     </h2>
                     <p className="text-primary/70 leading-relaxed">
@@ -178,7 +178,7 @@ export default function DetailLiterasi() {
             <p className="text-accent text-sm font-semibold tracking-wide mb-2">
               TONTON
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary">
+            <h2 className="text-xl md:text-3xl font-bold text-primary">
               Video <span className="text-accent">Terkait</span>
             </h2>
           </div>
