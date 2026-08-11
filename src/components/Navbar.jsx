@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes, faBookOpen } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const navLinks = [
   { to: '/', label: 'Beranda' },
@@ -33,9 +33,10 @@ export default function Navbar() {
             onClick={() => handleNavClick('/')}
             className="flex items-center gap-2 cursor-pointer bg-transparent border-none p-0"
           >
-            <FontAwesomeIcon
-              icon={faBookOpen}
-              className="text-accent text-xl"
+            <img
+              src="./images/logo-kkn-400px.PNG"
+              alt="Logo KKN Bulusari"
+              className="h-8 w-auto"
             />
             <span className="font-bold text-lg text-primary">
               Pojok Literasi Digital
