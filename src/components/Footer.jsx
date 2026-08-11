@@ -11,6 +11,7 @@ const footerLinks = [
     links: [
       { to: '/', label: 'Beranda' },
       { to: '/konten-literasi', label: 'Konten Literasi' },
+      { to: '/testimoni', label: 'Testimoni' },
       { to: '/penutup', label: 'Penutup' },
     ],
   },

@@ -6,6 +6,7 @@ import Beranda from './pages/Beranda'
 import KontenLiterasi from './pages/KontenLiterasi'
 import DetailLiterasi from './pages/DetailLiterasi'
 import Penutup from './pages/Penutup'
+import Testimoni from './pages/Testimoni'
 
 // React Router v7 menghilangkan trailing slash pada URL root (".../pojok-literasi-digital"),
 // sehingga path gambar relatif (./images/...) gagal dimuat. Normalisasi ini mengarahkan
@@ -46,6 +47,7 @@ export default function App() {
             <Route path="/konten-literasi" element={<KontenLiterasi />} />
             <Route path="/konten-literasi/:kategori" element={<DetailLiterasi />} />
             <Route path="/penutup" element={<Penutup />} />
+            <Route path="/testimoni" element={<Testimoni />} />
           </Routes>
         </main>
         <Footer />

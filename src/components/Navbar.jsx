@@ -6,6 +6,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 const navLinks = [
   { to: '/', label: 'Beranda' },
   { to: '/konten-literasi', label: 'Konten Literasi' },
+  { to: '/testimoni', label: 'Testimoni' },
   { to: '/penutup', label: 'Penutup' },
 ]
 
