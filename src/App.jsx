@@ -21,11 +21,24 @@ function RootSlashRedirect() {
   return null
 }
 
+// Otomatis scroll ke paling atas pada setiap navigasi — termasuk klik ke halaman yang
+// sedang aktif (misal klik "Beranda" saat sudah di Beranda) serta navigasi back/forward.
+// location.key selalu bernilai baru di setiap navigasi, tidak seperti pathname yang bisa
+// tidak berubah saat kita mengklik halaman yang sama.
+function ScrollToTop() {
+  const location = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.key])
+  return null
+}
+
 export default function App() {
   return (
     <BrowserRouter basename="/pojok-literasi-digital">
       <div className="font-sans">
         <RootSlashRedirect />
+        <ScrollToTop />
         <Navbar />
         <main>
           <Routes>
