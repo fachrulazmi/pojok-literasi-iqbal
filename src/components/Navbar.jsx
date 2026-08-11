@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-surface shadow-[0_2px_15px_rgba(0,0,0,0.05)]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-accent shadow-[0_2px_15px_rgba(0,0,0,0.05)]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -38,7 +38,7 @@ export default function Navbar() {
               alt="Logo KKN Bulusari"
               className="h-8 w-auto"
             />
-            <span className="font-bold text-lg text-primary">
+            <span className="font-bold text-lg text-surface">
               Pojok Literasi Digital
             </span>
           </button>
@@ -51,8 +51,8 @@ export default function Navbar() {
                 onClick={() => handleNavClick(link.to)}
                 className={`transition-colors cursor-pointer text-sm font-medium bg-transparent border-none p-0 ${
                   isActive(link.to)
-                    ? 'text-accent'
-                    : 'text-muted hover:text-accent'
+                    ? 'text-surface'
+                    : 'text-surface/80 hover:text-surface'
                 }`}
               >
                 {link.label}
@@ -63,7 +63,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-primary p-3 bg-transparent border-none cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="md:hidden text-surface p-3 bg-transparent border-none cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label="Toggle menu"
           >
             <FontAwesomeIcon
@@ -75,15 +75,15 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-primary/10">
+          <div className="md:hidden pb-4 border-t border-surface/20">
             {navLinks.map((link) => (
               <button
                 key={link.to}
                 onClick={() => handleNavClick(link.to)}
                 className={`block w-full text-left py-3.5 transition-colors cursor-pointer text-sm font-medium bg-transparent border-none min-h-[44px] ${
                   isActive(link.to)
-                    ? 'text-accent'
-                    : 'text-muted hover:text-accent'
+                    ? 'text-surface'
+                    : 'text-surface/80 hover:text-surface'
                 }`}
               >
                 {link.label}

@@ -21,7 +21,7 @@ function IntroSection() {
       <div className="max-w-6xl mx-auto px-4 w-full">
         <div className="flex flex-col md:grid md:grid-cols-2 md:items-center gap-8 md:gap-10">
           {/* Gambar — kanan di desktop, atas di mobile */}
-          <div className="order-1 md:order-2 flex justify-center md:justify-end">
+          <div className="order-1 md:order-2 flex justify-center md:justify-end mt-8 md:mt-0">
             <div className="relative w-full max-w-[220px] md:max-w-md aspect-square rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.07)]">
               <img
                 src="./images/hero-library.jpg"
@@ -33,9 +33,6 @@ function IntroSection() {
 
           {/* Teks — kiri di desktop, bawah di mobile */}
           <div className="order-2 md:order-1">
-            <p className="text-accent text-sm font-semibold tracking-wide mb-3">
-              POJOK LITERASI DIGITAL
-            </p>
             <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
               Apa itu{' '}
               <span className="text-accent">Pojok Literasi Digital</span>?
