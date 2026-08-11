@@ -29,8 +29,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-primary text-surface/80">
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {/* Kolom 1: Navigasi */}
           <div>
             <h4 className="font-semibold text-surface text-sm mb-4">
@@ -113,7 +113,7 @@ export default function Footer() {
               Pojok Literasi Digital
             </span>
           </div>
-          <p className="text-surface/30 text-xs">
+          <p className="text-surface/60 text-xs">
             &copy; {new Date().getFullYear()} Pojok Literasi Digital. Hak Cipta
             Dilindungi.
           </p>

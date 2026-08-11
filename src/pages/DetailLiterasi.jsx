@@ -39,18 +39,18 @@ export default function DetailLiterasi() {
             Kembali ke Konten Literasi
           </button>
 
-          <div className="flex items-start gap-5 mb-4">
-            <div className="w-16 h-16 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
+          <div className="flex items-start gap-4 md:gap-5 mb-4">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-accent/10 rounded-md flex items-center justify-center flex-shrink-0">
               <FontAwesomeIcon
                 icon={article.icon}
-                className="text-accent text-2xl"
+                className="text-accent text-xl md:text-2xl"
               />
             </div>
             <div>
               <p className="text-accent text-sm font-semibold tracking-wide mb-1">
                 KONTEN LITERASI
               </p>
-              <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight">
+              <h1 className="text-2xl md:text-5xl font-bold text-primary leading-tight">
                 {article.title}
               </h1>
             </div>
@@ -142,7 +142,7 @@ export default function DetailLiterasi() {
                   }`}
                 >
                   <div
-                    className={`hidden md:flex justify-center ${
+                    className={`flex justify-center ${
                       isOdd ? 'md:order-2 md:col-span-1' : 'md:order-1 md:col-span-1'
                     }`}
                   >

@@ -16,7 +16,7 @@ function IntroSection() {
   return (
     <section
       id="tentang"
-      className="min-h-[90vh] md:min-h-screen flex items-center bg-surface pt-16"
+      className="min-h-[90vh] md:min-h-screen flex items-start md:items-center bg-surface pt-16"
     >
       <div className="max-w-6xl mx-auto px-4 w-full">
         <div className="flex flex-col md:grid md:grid-cols-2 md:items-center gap-8 md:gap-10">
@@ -41,11 +41,6 @@ function IntroSection() {
               Pojok Literasi Digital adalah ruang edukasi dan pemberdayaan
               masyarakat untuk memahami, menyaring, dan menggunakan teknologi
               informasi secara sehat, bijak, dan bertanggung jawab.
-            </p>
-            <p className="text-primary/70 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
-              Berangkat dari keprihatinan terhadap rendahnya pemahaman digital
-              di tengah masyarakat, kami hadir sebagai jembatan yang
-              menghubungkan teknologi dengan kehidupan sehari-hari.
             </p>
             <button
               onClick={() => navigate('/konten-literasi')}

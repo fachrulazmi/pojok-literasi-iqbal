@@ -52,18 +52,18 @@ export default function KontenLiterasi() {
 
                 {/* Content */}
                 <div className="p-4">
-                  <p className="text-primary/70 text-xs leading-relaxed mb-3">
+                  <p className="text-primary/70 text-sm leading-relaxed mb-3">
                     {article.desc}
                   </p>
 
-                  <h3 className="font-semibold text-primary text-xs mb-3">
+                  <h3 className="font-semibold text-primary text-sm mb-3">
                     Poin Penting:
                   </h3>
                   <ul className="space-y-1.5">
                     {article.points.map((point, i) => (
                       <li
                         key={i}
-                        className="flex items-start gap-2 text-muted text-xs"
+                        className="flex items-start gap-2 text-muted text-sm"
                       >
                         <span className="text-accent mt-1 flex-shrink-0">
                           &#8226;
