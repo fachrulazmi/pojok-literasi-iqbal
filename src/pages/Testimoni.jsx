@@ -149,11 +149,11 @@ function CeritaSection() {
 
                 {/* Kolom angka untuk keseimbangan asimetris */}
                 <div
-                  className={`hidden md:flex md:col-span-2 items-center justify-center ${
+                  className={`hidden md:flex md:col-span-2 self-center items-center justify-center ${
                     isOdd ? 'md:order-2' : 'md:order-1'
                   }`}
                 >
-                  <div className="text-center">
+                  <div className="flex flex-col items-center justify-center">
                     <span className="text-accent-secondary font-bold text-5xl md:text-6xl block">
                       0{i + 1}
                     </span>
